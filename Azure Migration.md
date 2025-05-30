@@ -347,4 +347,4 @@ Answer:
 		2. Azure Hybrid Connections:
 				o Use Hybrid Connections in Azure App Services to connect cloud applications to on-premises resources.
 		3. Optimize Network Latency:
-Ensure low-latency connections by leveraging ExpressRoute for dedicated, high-performance connectivity.![image](https://github.com/user-attachments/assets/d168de5a-d9a2-41b8-af6b-1f3537b609c6)
+Ensure low-latency connections by leveraging ExpressRoute for dedicated, high-performance connectivity.
