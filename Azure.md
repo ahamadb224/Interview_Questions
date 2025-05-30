@@ -1,0 +1,54 @@
+1) What Kind of Different security principles you can create using or in Microsoft Entra ID?
+
+2) What is the difference between User assigned managed identity and system assigned managed identity?
+
+3) Which one do you prefer or suggest system or user assigned according to situation?
+
+4) What is the purpose of creating private end points and what are the benefits it will bring?
+
+5) what challenges we would have when creating or using the private end points.
+
+6) Name resolution process for private end points?
+
+7) Azure SQL server created initiallly with public access,DNS lookup using FQDN, we will get public IP.
+   If I create private end point, what would be DNS name resolution.
+
+8) What is the relationship between Private end point and Private DNS zone?
+
+9) Can we have multiple private DNS Zones? How private DNS Zones relates to different Azure Resources?
+
+10) Can we have a single Azure private DNS Zone for all services? Do we need multiple for different services?
+    When I create a private end point, which private DNS zone will be used?
+
+11) What is the mechanism to create a record in private DNS zone?
+
+12) When I am creating a private end point I will get records added to private DNS zone. But If I have multiple private DNS zones, which DNS zones will be used?
+
+13) What is Azure Security policies? What is it used for?
+
+14) At what level Azure security policies get applied?
+
+15) We have two virtual networks in Azure. We need to establish connection between these two networks. What options do we have?
+    When Connecting two Vnets, we got an error message saying that connection not allowed. What might be the reason?
+
+16) When we are talking about AKs cluster, What types of networking we implement for the cluster?
+
+17) When we create AKS cluster, we can create in public and private mode. What is the difference?
+
+18) If we configured AKs cluster in private mode, how can we integrate ACR with private AKS?
+
+19) I have a multi node cluster, and I want to restrict some nodes for particular appication.
+So all services from this application to be deployed only on to these two nodes.
+How to achieve this?
+
+20) Within my terraform module, I need to access Azure resources from different subscriptions, what do I need to define?
+
+21) I have two different terraform modules, one module provisions key vault, another one storage account.
+    For storage account encryption, encryption key will be stored in key vault, So I will make a call with  this module to make a keyvault for me, and I need to reference the key vault to specify the location for my encryption key. So How can I reference these sources provisioned in module one.
+
+22) I need to create a terraform module, that would be provisioning multiple instances of the same resource.
+    I passed the parameter list of names, and within the module I need to be able to just get the name from the list and create a VM.
+    get another name and create another VM. What mechanism in terraform, can I use to achieve this?
+
+23) I need to create multiple azure SQL servers, each SQL server should have unique name. and each SQL server in different location.
+How would you parameterize this in terraform module or loop this in terraform module, so that each SQL server will get unique name and different location?
