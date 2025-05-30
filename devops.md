@@ -62,3 +62,107 @@ Here's a possible organization of the questions into different DevOps-related to
 
 1.  What are the essential Linux commands you frequently use in your DevOps work?
 2.  What are canary deployments, and how would you implement them using Azure DevOps?
+
+
+Scenario: You need to ensure that your CI/CD pipeline can automatically roll back to a previous stable version if a deployment fails. What strategy should you implement?
+ 
+A) Blue-Green Deployment
+B) Canary Deployment
+C) Rolling Deployment
+D) Recreate Deployment
+Explanation: Blue-Green Deployment allows easy rollback by switching traffic between environments. Canary Deployment gradually shifts traffic, and Rolling Deployment updates instances incrementally. Recreate Deployment replaces all instances at once but doesn’t offer a quick rollback option.
+Scenario: Your team wants to minimize downtime during deployments in a Kubernetes environment. Which deployment strategy should you use?
+ 
+A) Rolling Update
+B) Recreate Strategy
+C) Blue-Green Deployment
+D) Canary Release
+Explanation: Rolling Update gradually replaces old versions with new ones, ensuring minimal downtime. Recreate terminates all old pods before starting new ones, causing downtime. Blue-Green requires two environments, and Canary Release shifts a small amount of traffic, but doesn't minimize downtime as effectively.
+Scenario: You’re tasked with improving the speed and efficiency of your CI/CD pipeline. Which practice will have the most significant impact?
+A) Using monolithic architecture
+B) Parallelizing test execution
+C) Increasing the size of build agents
+D) Implementing manual approval steps
+Explanation: Parallelizing tests significantly reduces pipeline execution time. Monolithic architecture can slow down development, increasing build agent size has diminishing returns, and manual approval steps add delays.
+Scenario: Your application experiences issues during peak traffic times. You need to ensure automatic scaling to handle variable loads. What should you implement?
+A) Scheduled Scaling
+B) Manual Scaling
+C) Horizontal Pod Autoscaler (HPA)
+D) Vertical Scaling
+Explanation: HPA adjusts the number of pods based on resource usage, effectively managing variable loads. Scheduled Scaling doesn’t respond to real-time demand, Manual Scaling requires intervention, and Vertical Scaling increases resources per instance but doesn’t scale out.
+Scenario: Your team is required to maintain consistent environments across development, testing, and production. Which tool should you use to manage this?
+A) Docker Compose
+B) Terraform
+C) Kubernetes ConfigMaps
+D) Ansible
+Explanation: Terraform allows you to define and provision infrastructure consistently across all environments. Docker Compose is specific to local container setups, ConfigMaps manage configurations, and Ansible handles configuration management but isn't as focused on infrastructure consistency.
+Scenario: Your organization requires strict control over configuration changes to infrastructure across multiple environments. Which approach should you adopt?
+ 
+A) Manual configuration changes
+B) Continuous Integration
+C) Infrastructure as Code (IaC)
+D) Automated testing
+Explanation: IaC allows version-controlled, automated infrastructure management, ensuring consistent changes across environments. Manual changes risk inconsistency, CI is for application code, and automated testing verifies code but doesn’t manage infrastructure.
+Scenario: You need to manage and monitor microservices in a Kubernetes environment. Which tool would best serve this purpose?
+ 
+A) Prometheus with Grafana
+B) Jenkins with Blue Ocean
+C) Terraform with Consul
+D) Chef with InSpec
+Explanation: Prometheus with Grafana provides monitoring and visualization for microservices in Kubernetes. Jenkins/Blue Ocean focuses on CI/CD, Terraform/Consul on infrastructure and service discovery, and Chef/InSpec on configuration management and compliance.
+Scenario: Your DevOps team needs to implement a secret management solution that integrates with your CI/CD pipeline. Which service should you choose?
+ 
+A) AWS KMS
+B) HashiCorp Vault
+C) Docker Secrets
+D) Kubernetes Secrets
+Explanation: HashiCorp Vault is a comprehensive secret management tool that integrates well with CI/CD pipelines. AWS KMS is primarily for key management, Docker/Kubernetes Secrets store secrets but offer fewer features for CI/CD integration.
+ 
+Scenario: You need to ensure that all code changes are automatically tested and deployed to a staging environment before production. Which practice should you implement?
+A) Continuous Integration
+B) Continuous Delivery
+C) Feature Toggles
+D) Blue-Green Deployment
+Explanation: Continuous Delivery ensures code changes are tested and deployed to staging automatically. Continuous Integration focuses on code merging and testing, Feature Toggles manage features, and Blue-Green Deployment is a release strategy, not a testing/deployment process.
+Scenario: Your organization uses multiple cloud providers. You need to ensure your CI/CD pipeline can deploy consistently across them. Which tool should you use?
+A) Jenkins with CloudFormation
+B) Terraform with Jenkins
+C) Kubernetes with Ansible
+D) AWS CodePipeline with Azure DevOps
+Explanation: Terraform is cloud-agnostic, and Jenkins integrates well to manage deployments across multiple cloud providers. CloudFormation is AWS-specific, Kubernetes/Ansible handle container orchestration/configuration, and CodePipeline with Azure DevOps are cloud-specific tools.
+Scenario: Your team wants to automate the security compliance checks of your infrastructure. Which tool would best fit this requirement?
+A) Jenkins
+B) Docker
+C) InSpec
+D) Nagios
+Explanation: InSpec automates security compliance checks. Jenkins handles CI/CD, Docker is for containerization, and Nagios is a monitoring tool but doesn’t perform compliance checks.
+Scenario: You’re tasked with implementing disaster recovery for a critical application. What’s the best approach in a cloud-native environment?
+A) Manual backups and restore procedures
+B) Multi-region deployment with failover
+C) Scheduled snapshots with AWS Backup
+D) Auto Scaling with Load Balancing
+Explanation: Multi-region deployment ensures high availability and disaster recovery. Manual backups are error-prone, scheduled snapshots only protect data, and Auto Scaling/Load Balancing handle scaling but not disaster recovery.
+Scenario: You need to manage and version your infrastructure configuration files. Which tool is most suitable?
+A) Git
+B) Docker
+C) Jenkins
+D) Ansible
+Explanation: Git is ideal for versioning and managing infrastructure configuration files. Docker is for containerization, Jenkins for CI/CD, and Ansible for configuration management.
+Scenario: Your DevOps team is asked to implement security scanning in the CI/CD pipeline. Which tool should you integrate? 
+A) Terraform
+B) SonarQube
+C) Vault
+D) Chef
+Explanation: SonarQube integrates into CI/CD pipelines to perform code quality and security scans. Terraform handles infrastructure, Vault manages secrets, and Chef is for configuration management.
+Scenario: You need to monitor the health and performance of your Docker containers in production. What’s the best tool to use?
+A) Jenkins
+B) Kubernetes Dashboard
+C) Prometheus with Grafana
+D) AWS CloudWatch
+Explanation: Prometheus with Grafana is widely used for monitoring containers. Jenkins handles CI/CD, Kubernetes Dashboard manages Kubernetes clusters, and CloudWatch is specific to AWS but doesn’t offer the same level of container-specific monitoring.
+Scenario: Your team needs to standardize the development environment across all developers’ machines. Which tool would best achieve this?
+A) Docker
+B) Terraform
+C) Vagrant
+D) Kubernetes
+Explanation: Docker containers ensure consistent environments across machines. Vagrant also creates environments but isn't as lightweight or widely adopted. Terraform is for infrastructure as code, and Kubernetes orchestrates containers but doesn’t standardize local environments.
