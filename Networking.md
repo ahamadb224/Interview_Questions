@@ -1,6 +1,7 @@
 Basic Level [ Network Administration ]
 
 What is the purpose of the ifconfig command in Linux?
+
 What is the difference between ifconfig and ip commands?
 How do you configure a static IP address on a Linux system?
 What are the commonly used network configuration files in Linux?
