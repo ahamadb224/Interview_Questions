@@ -194,3 +194,16 @@
 	127. ExpressRoute connections. 
 	128. I What are the default VNet limits in Azure? 
 Default: 50 VNets per region and 100 subnets per Vnet
+
+What is an imperative way of deploying a pod in kubernetes 
+how to check pods whether they are running or not What is a pod? 
+how to check the pod logs 
+there are 5 pods, what will be the pod name - It will start with the name of the deployment, replicaset, hash value 
+what are k8s objects? 
+other than deployment where we will configure HPA -- Statful sets 
+what is diff between vm and agent? 
+in the vm it will fail in linux mostly due to wrong fstab entries
+how can I configure SSL for Standard load balancer, Azure app gateway. 
+In how many ways we can define variables azure devops
+
+Diff b/w app registration & enterprise application?
