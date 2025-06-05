@@ -1,31 +1,3 @@
-Cloud Migration Strategies
-
-Rehost
-
-Replatform
-
-Repurchase
-
-Refactor/Rearchitecture
-
-Relocate
-
-Retire
-
-Retain
-
-Steps in Cloud Migration:
-
-1) Preparation
-
-2) Planning
-
-3) Migrate
-
-4) Monitor
-
-5) Optimize
-
 # Azure Migration Q\&A
 
 ## 1. What are the different migration strategies for moving workloads to Azure?
